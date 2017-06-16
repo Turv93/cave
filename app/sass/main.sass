@@ -1,0 +1,454 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.wrapper
+    width: 960px
+    margin: 0 auto
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+//reviews
+.reviews
+    background-color: #111825
+    padding-top: 160px
+    padding-bottom: 170px
+    position: relative
+    .item-figure
+        position: absolute
+        top: 160px
+        left: -94px
+        z-index: 100
+    .item-figure2
+        position: absolute
+        bottom: 0
+        right: 0
+    .carousel-reviews-item
+        display: flex
+        justify-content: space-between
+        margin-top: 130px
+        position: relative
+        .item-info
+            margin-left: 40px
+    &_content
+        position: relative
+        .marks
+            position: absolute
+            top: -45px
+            left: -55px
+    h2
+        margin: 0
+        color: #005fa9
+        font-family: "GilroyExtraBold"
+        font-size: 59px
+        line-height: 64px
+        text-transform: uppercase
+    .owl-carousel .owl-item img
+        width: auto
+        
+    .owl-nav
+        position: absolute
+        top: 0
+        right: 0
+    .owl-nav .owl-prev
+        background-image: url(../img/white-arrow-left.png)
+        width: 44px
+        height: 19px
+        display: inline-block
+        &:hover
+            background-image: url(../img/cert-arrow-left-hover.png)
+    .owl-nav .owl-next
+        background-image: url(../img/white-arrow-right.png)
+        width: 44px
+        height: 19px
+        display: inline-block
+        margin-left: 30px
+        &:hover
+            background-image: url(../img/cert-arrow-right-hover.png)
+    h3
+        color: #fff
+        font-family: "GilroyExtraBold"
+        font-size: 35px
+        margin: 0
+    span
+        color: #3005fa
+        font-size: 30px
+    p
+        color: #fff
+        font-size: 24px
+        line-height: 30px
+
+
+        
+
+//Questions
+.questions
+    padding-top: 155px
+    padding-bottom: 70px
+    &_content
+        position: relative
+    .questions_image
+        z-index: 1
+        position: absolute
+        top: -32px
+        left: -332px
+    .questions_form
+        text-align: right
+        z-index: 100
+        position: relative
+        h2
+            margin: 0
+            padding: 0
+            color: #15233f
+            font-family: "GilroyExtraBold"
+            font-size: 50px
+            font-weight: bold
+            text-transform: uppercase
+        p
+            color: #15233f
+            font-size: 35px
+            line-height: 42px
+            margin: 0
+            padding-top: 40px
+            padding-bottom: 55px
+
+        input
+            width: 308px
+            height: 56px
+            border: 1px solid #000
+            background-color: #fff
+            margin-bottom: 22px
+            padding-left: 35px
+        textarea
+            width: 487px
+            height: 152px
+            border: 1px solid #000
+            background-color: #fff
+            padding-left: 35px
+            margin-bottom: 40px
+            padding-top: 10px
+        .questions_2-btn
+            width: 215px
+            height: 56px
+            border: 1px solid $accent
+            color: $accent
+            font-size: 22px
+            background-color: transparent
+            transition: all 1s ease
+            &:hover
+                background-color: $accent
+                color: #0f1521
+
+
+
+//QUESTIONS 2
+.questions2
+    padding-bottom: 100px
+    
+    &_content
+        position: relative
+        z-index: 100
+    &_man
+        position: absolute
+        bottom: -100px
+        right: -40px
+        z-index: -1
+    &_form
+        text-align: right
+        max-width: 555px
+        h2
+            margin: 0
+            padding: 0
+            color: $accent
+            font-family: "GilroyExtraBold"
+            font-size: 50px
+            font-weight: bold
+            text-transform: uppercase
+        p
+            color: #fff
+            font-size: 35px
+            line-height: 42px
+        input
+            width: 308px
+            height: 56px
+            border: 1px solid #000
+            background-color: #fff
+            margin-bottom: 22px
+            padding-left: 35px
+        textarea
+            width: 487px
+            height: 152px
+            border: 1px solid #000
+            background-color: #fff
+            padding-left: 35px
+            margin-bottom: 40px
+            padding-top: 10px
+        .questions_2-btn
+            width: 215px
+            height: 56px
+            border: 1px solid $accent
+            color: $accent
+            font-size: 22px
+            background-color: transparent
+            transition: all 1s ease
+            &:hover
+                background-color: $accent
+                color: #0f1521
+
+
+
+//certificate
+.certificate
+    position: relative
+    background-color: #deeaf2
+    padding-top: 100px
+    padding-bottom: 170px
+    &_title
+        position: relative
+    h2
+        margin: 0
+        color: #14233f
+        font-family: "GilroyExtraBold"
+        font-size: 50px
+        text-transform: uppercase
+    p
+        margin: 0
+        color: #15233f
+        line-height: 30px
+        font-size: 24px
+        padding-left: 95px
+
+    .cert-marks
+        position: absolute
+        top: 15%
+        left: -11%
+    .owl-carousel .owl-item img
+        width: auto
+    .carousel-certificate
+        margin-left: 10%
+        margin-top: 140px
+    .owl-nav
+        position: absolute
+        top: -70px
+    .owl-nav .owl-prev
+        background-image: url(../img/cert-arrow-left.png)
+        width: 44px
+        height: 19px
+        display: inline-block
+        &:hover
+            background-image: url(../img/cert-arrow-left-hover.png)
+    .owl-nav .owl-next
+        background-image: url(../img/cert-arrow-right.png)
+        width: 44px
+        height: 19px
+        display: inline-block
+        margin-left: 30px
+        &:hover
+            background-image: url(../img/cert-arrow-right-hover.png)
+
+
+//Equipment
+.equipment
+    h3
+        color: #14233f
+        font-size: 40px
+        margin-left: -130px
+        margin-bottom: 120px
+        span
+            font-family: "GilroyExtraBold"
+
+    &_content
+        display: flex
+        &_images
+            display: flex
+            img:first-child
+                margin-left: -121px
+    h2
+        color: #005fa9
+        font-family: "GilroyExtraBold"
+        font-size: 59px
+        text-transform: uppercase
+        line-height: 64px
+    &_content_title
+        position: relative
+        padding-top: 170px
+        z-index: 10
+        .marks
+            position: absolute
+            top: 30%
+            left: -60px
+        .backgr
+            position: absolute
+            top: 0
+            right: -1px
+            z-index: -1
+            height: 100%
+    &_content_info
+        padding-top: 40px
+        p
+            margin: 0
+            padding-left: 104px
+            color: #14233f
+            font-size: 26px
+            line-height: 33px
+        img
+            margin-top: 38px
+
+            
+
+
+//DOUBT
+.doubt
+    position: relative
+    &_content
+        background-image: url(../img/doubt-bg.jpg)
+        background-size: cover
+        min-height: 1011px
+        max-width: 50%
+    &_content_right
+        position: absolute
+        right: 0
+        top: 23.1%
+        background-image: url(../img/doubt-bg.jpg)
+        min-height: 1011px
+        min-width: 50%
+        z-index: 1
+        
+.doubt_calc
+    width: 756px
+    height: 1245px
+    background: linear-gradient(to left, #00d0fe, #0061aa)
+    padding-left: 125px
+    padding-right: 152px
+    padding-top: 125px
+    z-index: 2
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translate(-50%, 0)
+    
+    #range1
+        width: 100%
+        background-color: $accent
+    #i1
+        background-color: transparent
+        border: none
+        color: #fff
+        font-family: "GilroyExtraBold"
+        font-size: 60px
+        width: 100%
+        padding-left: 80px
+    .doubt_btn
+        width: 310px
+        height: 55px
+        color: #fff
+        font-size: 22px
+        background-color: transparent
+        border: 1px solid #fff
+        outline: none
+        box-shadow: none
+        margin-top: 40px
+        transition: background-color 1s ease
+        &:hover
+            background-color: #fff
+            color: $accent
+        &:active
+            background-color: darken($accent, 5%)
+
+
+    h2
+        color: #fff
+        font-family: "GilroyExtraBold"
+        font-size: 50px
+        line-height: 64px
+        text-transform: uppercase
+    h3
+        color: #fff
+        font-size: 30px
+        sup
+            font-size: 18px
+
+    p
+        color: #fff
+        font-size: 35px
+        line-height: 42px
+    &_content
+        text-align: center
+
+
+
+
+//FOOTER
+
+.footer
+    padding-top: 340px
+    background-image: url(../img/footer-bg3.jpg)
+    background-position: center 100px
+    background-size: cover
+    position: relative
+
+.footer-bottom
+    border-top: 2px solid #0072b7
+    padding-top: 55px
+    padding-bottom: 190px
+.footer_content
+    display: flex
+    justify-content: space-between
+    &_addr
+        color: #fff
+        font-size: 30px
+        img
+            margin-right: 25px
+            margin-top: -5px
+    &_social
+        ul
+            margin: 0
+            padding: 0
+            list-style-type: none
+            li
+                display: inline-block
+                margin-right: 15px
+                img
+                    transition: all 1s ease
+                    &:hover
+                        transform: scale(.9)
+
+@import "media" // Всегда в конце
